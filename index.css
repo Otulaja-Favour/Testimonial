@@ -26,15 +26,14 @@
 }
 
 .insert1 {
-    width: 60%;
+    width: 57%;
     border: 1px solid;
     padding: 30px;
     background-color: #733FC8;
-
 }
 
 .insert2 {
-    width: 30%;
+    width: 36%;
     border: 1px solid;
     padding: 30px;
     background-color: #49556B;
@@ -69,6 +68,12 @@
 
 .text {
     margin: 10px 0px 0px 5px;
+}
+b{
+    font-size: 18px;
+}
+p{
+    font-size: 14px;
 }
 
 .main2 {
