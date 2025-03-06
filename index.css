@@ -18,6 +18,8 @@ body {
     color: white;
     font-family: Barlow Semi Condensed;
     line-height: 20px;
+    
+margin-bottom: 30px;
 
 }
 
@@ -49,6 +51,7 @@ body {
     border-radius: 10px;
     padding: 30px;
     background-color: #733FC8;
+    /* box-shadow: 5px 5px 10px 1px black; */
 }
 
 .insert2 {
@@ -56,6 +59,8 @@ body {
     border-radius: 10px;
     padding: 30px;
     background-color: #49556B;
+    /* box-shadow: 5px 5px 10px 1px black; */
+
 }
 
 .insert2 p {
@@ -105,9 +110,11 @@ b {
     padding: 30px;
     background-color: #fff;
     color: black;
+    /* box-shadow: 1px 1px 10px 2px black; */
+    
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:600px) {
     .main-container {
         width: 100%;
         padding: 30px;
@@ -169,4 +176,90 @@ b {
 
     }
 
+}
+
+/* for tablet */
+@media screen and (min-width:600px) and (max-width:790px) {
+    .main-container {
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+    }
+    .upper .insert1{
+        /* background-image: none; */
+    }
+    .upper {
+        width: 100%;
+        flex-direction: column;
+        /* padding: 0; */
+        margin: 0;
+    }
+
+    .lower {
+        width: 100%;
+        flex-direction: column;
+        /* padding: 0; */
+        margin: 0;
+    }
+
+    .insert1,
+    .insert2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .part1 {
+        width: 10%;
+        margin-bottom: 10px;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .img img {
+        width: 40px;
+    }
+
+    .text {
+        width: 50%;
+        text-wrap: nowrap;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .text b {
+        font-size: 12px;
+    }
+
+    .main2 {
+        width: 100%;
+    }
+
+    .main1 {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+/* for 1024 screen */
+@media screen and (max-width:1024px) {
+    .part1{
+        width: 30%;
+    }
+    .img img{
+        width: 40px;
+    }
+    .text{
+        text-wrap: nowrap;
+        margin: 5px 0px 0px 10px;
+    }
+    .main2{
+
+        width: 30%;
+    }
+    .main-container{
+padding: 20px;
+    }
 }
