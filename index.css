@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #D1D2D7;
+}
 .main-container {
     width: 90%;
-    margin: 0 auto;
+    margin: 5px auto;
     display: flex;
     flex-direction: row;
     color: white;
+    font-family: Barlow Semi Condensed;
 }
 
 .main1 {
     width: 70%;
 }
-
+.text b{
+    font-weight: normal;
+    font-size: 15px;
+}
 .upper {
     width: 100%;
     display: flex;
@@ -27,14 +34,14 @@
 
 .insert1 {
     width: 57%;
-    border: 1px solid;
+border-radius: 10px;
     padding: 30px;
     background-color: #733FC8;
 }
 
 .insert2 {
     width: 36%;
-    border: 1px solid;
+    border-radius: 10px;
     padding: 30px;
     background-color: #49556B;
 
@@ -78,9 +85,42 @@ p{
 
 .main2 {
     width: 25%;
-    border: 1px solid;
+    border-radius: 10px;
     padding: 30px;
     background-color: #fff;
     color: black;
 
+}
+
+@media screen and (max-width:900px) {
+    .main-container{
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+    }
+    .upper{
+        width: 100%;
+        flex-direction: column;
+        /* padding: 0; */
+    }
+    .lower{
+        width: 100%;
+        flex-direction: column;
+        /* padding: 0; */
+    }
+    .insert1, .insert2{
+        width: 100%;
+    }
+    .part1{
+        width: 60%;
+    }
+    .img img{
+        width: 30px;
+    }
+    .text{
+        /* width: 100%; */
+    }
+    .main2, .main1{
+        width: 100%;
+    }
 }
